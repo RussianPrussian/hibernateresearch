@@ -1,0 +1,9 @@
+version: '3'
+services:
+  hibresearch:
+    image: postgres:10
+    ports:
+      - "5432:5432"
+    env_file: db.env
+volumes:
+  hibresearch:
